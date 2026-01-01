@@ -44,6 +44,22 @@
     2.  扫描文中新出现的人物/物品/概念，添加到 `WorldDB`。
     3.  更新 `changelog.md`: 记录今日进展。
 
+### **D. 版本发布 (Release Management)**
+*   **概念**: 利用 GitHub Releases 发布“编译”好的成品（如 PDF/EPUB），作为这一阶段的定格。这提供了比起单纯 Commit 更强的“里程碑感”和“版本回溯能力”。
+*   **策略建议 (Strategy)**:
+    *   **Pre-release (Alpha/Beta)**: 邀请核心书友试读时，发布 `v0.x.0-beta`，并勾选 GitHub 上的 "Set as a pre-release"。
+    *   **Official Release**: 单章定稿或全卷完结时，发布正式版。
+*   **版本号规则**:
+    *   `v0.x.0`: 单个章节发布 (如 v0.1.0 = 第一章, v0.2.0 = 第二章)。
+    *   `v1.0.0`: 完整卷/部发布。
+*   **操作流程**:
+    1.  Natt 确认 `03_成品发布区` 内容无误。
+    2.  (可选) 将 Markdown 导出为 PDF/EPUB（作为附件提供给读者下载）。
+    3.  在 GitHub 点击 "Draft a new release"。
+    4.  Tag Version 设为对应版本号 (如 v0.1.0)。
+    5.  上传 PDF/EPUB 作为 Attachments (附件)。
+    6.  Release Note 填写该章节的导读或更新摘要。
+
 ---
 
 ## 3. 文件结构原则 (File Integrity)
